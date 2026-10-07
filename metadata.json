@@ -1,0 +1,6 @@
+{
+  "name": "TypoGraph Measurement Converter & Grid Architect",
+  "description": "High-precision graphic design and typography measurement converter for mm, em, px, in, and pt units with interactive visual rulers, custom modular grids, 2-page facing spreads, letter anatomy, and typeface pairing studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

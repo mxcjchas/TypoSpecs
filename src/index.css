@@ -1,0 +1,625 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* ==========================================================================
+   TypoGraph Dual Theme System:
+   - Light Mode: Warm Pastel Beige & Cream Editorial Canvas
+   - Dark Mode: Rich Saddle / Cordovan Dark Leather Studio Blotter
+   Adheres to strict mathematical optical contrast, WCAG AA, and anti-slop rules
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   LIGHT SCREEN: WARM PASTEL BEIGE PALETTE
+   ========================================================================== */
+
+/* Base Body Surface */
+html:not(.dark),
+html:not(.dark) body {
+  background-color: #f7f4ee !important;
+  color: #2b221a !important;
+}
+
+/* Pastel Beige Surfaces in Light Mode */
+html:not(.dark) .bg-stone-50,
+html:not(.dark) .bg-stone-50\/40,
+html:not(.dark) .bg-stone-50\/50,
+html:not(.dark) .bg-stone-50\/60,
+html:not(.dark) .bg-stone-50\/70,
+html:not(.dark) .bg-stone-50\/80,
+html:not(.dark) .bg-stone-50\/90 {
+  background-color: #f4efe4 !important;
+}
+
+html:not(.dark) .bg-white {
+  background-color: #fdfcf8 !important;
+}
+
+html:not(.dark) .bg-white\/95 {
+  background-color: rgba(253, 252, 248, 0.96) !important;
+}
+
+html:not(.dark) .bg-stone-100,
+html:not(.dark) .bg-stone-100\/80,
+html:not(.dark) .bg-stone-100\/90 {
+  background-color: #ece5d6 !important;
+}
+
+html:not(.dark) .bg-stone-200,
+html:not(.dark) .bg-stone-200\/60,
+html:not(.dark) .bg-stone-200\/70,
+html:not(.dark) .bg-stone-200\/80 {
+  background-color: #dfd5c2 !important;
+}
+
+/* High Contrast Active Navigation Buttons & Deep Accent in Light Mode (Rich Espresso) */
+html:not(.dark) nav button.bg-stone-900,
+html:not(.dark) .bg-stone-900:not(.theme-exempt) {
+  background-color: #2e241c !important;
+  color: #faf7f1 !important;
+  border-color: #2e241c !important;
+}
+
+/* Brand icon box in Header (Light Mode) */
+html:not(.dark) #app-header .bg-stone-900 {
+  background-color: #2e241c !important;
+  border-color: #45372b !important;
+  color: #faf7f1 !important;
+}
+
+/* Typography in Light Mode (Warm Roasted Chestnut & Deep Bistre) */
+html:not(.dark) .text-stone-900 {
+  color: #2a2118 !important;
+}
+
+html:not(.dark) .text-stone-800 {
+  color: #3e3227 !important;
+}
+
+html:not(.dark) .text-stone-700 {
+  color: #554738 !important;
+}
+
+html:not(.dark) .text-stone-600 {
+  color: #726251 !important;
+}
+
+html:not(.dark) .text-stone-500 {
+  color: #8f7d6a !important;
+}
+
+html:not(.dark) .text-stone-400 {
+  color: #ab9a86 !important;
+}
+
+/* Structural Borders in Light Mode (Warm Sand & Linen) */
+html:not(.dark) .border-stone-100 {
+  border-color: #eee6d8 !important;
+}
+
+html:not(.dark) .border-stone-200,
+html:not(.dark) .border-stone-200\/80 {
+  border-color: #e0d6c5 !important;
+}
+
+html:not(.dark) .border-stone-300 {
+  border-color: #d1c5b0 !important;
+}
+
+html:not(.dark) .border-stone-900 {
+  border-color: #2e241c !important;
+}
+
+html:not(.dark) .ring-stone-900\/10,
+html:not(.dark) .ring-stone-900 {
+  --tw-ring-color: rgba(46, 36, 28, 0.15) !important;
+}
+
+/* Form Controls & Inputs in Light Mode */
+html:not(.dark) input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html:not(.dark) select,
+html:not(.dark) textarea {
+  background-color: #fffefc !important;
+  color: #2a2118 !important;
+  border: 1px solid #ded4c3 !important;
+}
+
+html:not(.dark) input:focus:not(.bg-transparent),
+html:not(.dark) select:focus,
+html:not(.dark) textarea:focus {
+  border-color: #c48740 !important;
+  box-shadow: 0 0 0 1px rgba(196, 135, 64, 0.25) !important;
+  outline: none !important;
+}
+
+/* Hover States in Light Mode */
+html:not(.dark) tr.hover\:bg-stone-50:hover,
+html:not(.dark) tr.hover\:bg-stone-50\/80:hover,
+html:not(.dark) tbody tr:hover {
+  background-color: #f0eae0 !important;
+}
+
+html:not(.dark) .hover\:bg-stone-50:hover,
+html:not(.dark) .hover\:bg-stone-50\/40:hover,
+html:not(.dark) .hover\:bg-stone-50\/50:hover,
+html:not(.dark) .hover\:bg-stone-50\/60:hover,
+html:not(.dark) .hover\:bg-stone-50\/70:hover,
+html:not(.dark) .hover\:bg-stone-50\/80:hover,
+html:not(.dark) .hover\:bg-stone-50\/90:hover {
+  background-color: #eee7db !important;
+}
+
+html:not(.dark) .hover\:bg-stone-100:hover,
+html:not(.dark) .hover\:bg-stone-100\/50:hover,
+html:not(.dark) .hover\:bg-stone-100\/80:hover,
+html:not(.dark) .hover\:bg-stone-100\/90:hover {
+  background-color: #e5dccb !important;
+}
+
+html:not(.dark) .hover\:bg-stone-200:hover {
+  background-color: #d6ccb8 !important;
+}
+
+html:not(.dark) .hover\:bg-white:hover {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .hover\:bg-stone-900:hover {
+  background-color: #3d2f25 !important;
+  color: #ffffff !important;
+}
+
+
+/* ==========================================================================
+   DARK SCREEN: DARK LEATHER PALETTE (SADDLE, CORDOVAN & OILED HIDE)
+   ========================================================================== */
+
+/* Base Body Surface: Deep Saddle Leather Hide */
+html.dark,
+html.dark body {
+  background-color: #15110d !important;
+  color: #f7eee5 !important;
+}
+
+/* Dark Leather Surfaces */
+html.dark .bg-stone-50,
+html.dark .bg-stone-50\/40,
+html.dark .bg-stone-50\/50,
+html.dark .bg-stone-50\/60,
+html.dark .bg-stone-50\/70,
+html.dark .bg-stone-50\/80,
+html.dark .bg-stone-50\/90,
+html.dark .dark\:bg-stone-900,
+html.dark .dark\:bg-stone-900\/40,
+html.dark .dark\:bg-stone-900\/60,
+html.dark .dark\:bg-stone-900\/90 {
+  background-color: #1c1511 !important; /* Deep saddle hide */
+}
+
+html.dark .bg-white,
+html.dark .dark\:bg-stone-800,
+html.dark .dark\:bg-stone-800\/30,
+html.dark .dark\:bg-stone-800\/40,
+html.dark .dark\:bg-stone-800\/60,
+html.dark .dark\:bg-stone-800\/70,
+html.dark .dark\:bg-stone-800\/80 {
+  background-color: #231b16 !important; /* Rich burnished oiled leather card */
+}
+
+html.dark .bg-white\/95 {
+  background-color: rgba(35, 27, 22, 0.96) !important;
+}
+
+html.dark .bg-stone-100,
+html.dark .bg-stone-100\/80,
+html.dark .bg-stone-100\/90 {
+  background-color: #2c221b !important; /* Cordovan leather button / pill */
+}
+
+html.dark .bg-stone-200,
+html.dark .bg-stone-200\/60,
+html.dark .bg-stone-200\/70,
+html.dark .bg-stone-200\/80 {
+  background-color: #382c23 !important; /* Walnut tooled leather groove */
+}
+
+/* High Contrast Active Navigation Buttons & Accent Badges in Dark Leather */
+html.dark nav button.bg-stone-900,
+html.dark .bg-stone-900.text-white:not(.theme-exempt) {
+  background-color: #d6985b !important; /* Warm tan saddle stitch highlight */
+  color: #17110d !important;
+  border-color: #d6985b !important;
+}
+
+/* Brand icon box in Header */
+html.dark #app-header .bg-stone-900 {
+  background-color: #271e18 !important;
+  border-color: #48372b !important;
+  color: #f7eee5 !important;
+}
+
+/* Typography in Dark Leather (Warm Antique Parchment & Aged Cream) */
+html.dark .text-stone-900,
+html.dark .dark\:text-stone-100 {
+  color: #f7eee5 !important;
+}
+
+html.dark .text-stone-800,
+html.dark .dark\:text-stone-200 {
+  color: #eae0d3 !important;
+}
+
+html.dark .text-stone-700,
+html.dark .dark\:text-stone-300 {
+  color: #d8c8b6 !important;
+}
+
+html.dark .text-stone-600,
+html.dark .dark\:text-stone-400 {
+  color: #b39f8c !important;
+}
+
+html.dark .text-stone-500,
+html.dark .dark\:text-stone-500 {
+  color: #92806e !important;
+}
+
+html.dark .text-stone-400 {
+  color: #766554 !important;
+}
+
+/* Structural Borders in Dark Leather (Fine Saddle Stitch & Burnished Edges) */
+html.dark .border-stone-100 {
+  border-color: #2c211a !important;
+}
+
+html.dark .border-stone-200,
+html.dark .border-stone-200\/80,
+html.dark .dark\:border-stone-800,
+html.dark .dark\:border-stone-800\/60,
+html.dark .dark\:border-stone-800\/70,
+html.dark .dark\:border-stone-800\/80 {
+  border-color: #3f3126 !important; /* Fine saddle stitch seam */
+}
+
+html.dark .border-stone-300,
+html.dark .dark\:border-stone-700,
+html.dark .dark\:border-stone-700\/60 {
+  border-color: #513f32 !important;
+}
+
+html.dark .border-stone-900 {
+  border-color: #d6985b !important; /* Warm tan leather highlight */
+}
+
+html.dark .ring-stone-900\/10,
+html.dark .ring-stone-900 {
+  --tw-ring-color: rgba(214, 152, 91, 0.35) !important;
+}
+
+/* Gauge Bar Gradient in Dark Leather */
+html.dark .from-stone-900 {
+  --tw-gradient-from: #c48648 !important;
+}
+html.dark .to-stone-700 {
+  --tw-gradient-to: #e5b178 !important;
+}
+
+/* Form Controls & Inputs in Dark Leather */
+html.dark input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html.dark select,
+html.dark textarea {
+  background-color: #1b1511 !important;
+  color: #f7eee5 !important;
+  border: 1px solid #48372b !important;
+}
+
+/* Explicitly exempt transparent inputs used inside custom wrappers */
+html.dark input.bg-transparent,
+html.dark input[type="text"].bg-transparent,
+html.dark input[type="number"].bg-transparent {
+  background-color: transparent !important;
+  border: none !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html.dark input.bg-transparent:focus,
+html.dark input[type="text"].bg-transparent:focus,
+html.dark input[type="number"].bg-transparent:focus {
+  background-color: transparent !important;
+  border: none !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html.dark input:focus:not(.bg-transparent),
+html.dark select:focus,
+html.dark textarea:focus {
+  border-color: #d6985b !important;
+  box-shadow: 0 0 0 1px rgba(214, 152, 91, 0.3) !important;
+  outline: none !important;
+}
+
+/* Hover States in Dark Leather */
+html.dark tr.hover\:bg-stone-50:hover,
+html.dark tr.hover\:bg-stone-50\/80:hover,
+html.dark tbody tr:hover {
+  background-color: #2c211a !important;
+}
+
+html.dark .hover\:bg-stone-50:hover,
+html.dark .hover\:bg-stone-50\/40:hover,
+html.dark .hover\:bg-stone-50\/50:hover,
+html.dark .hover\:bg-stone-50\/60:hover,
+html.dark .hover\:bg-stone-50\/70:hover,
+html.dark .hover\:bg-stone-50\/80:hover,
+html.dark .hover\:bg-stone-50\/90:hover {
+  background-color: #281f19 !important;
+}
+
+html.dark .hover\:bg-stone-100:hover,
+html.dark .hover\:bg-stone-100\/50:hover,
+html.dark .hover\:bg-stone-100\/80:hover,
+html.dark .hover\:bg-stone-100\/90:hover {
+  background-color: #362920 !important;
+}
+
+html.dark .hover\:bg-stone-200:hover,
+html.dark .hover\:bg-stone-200\/60:hover,
+html.dark .hover\:bg-stone-200\/70:hover,
+html.dark .hover\:bg-stone-200\/80:hover,
+html.dark .hover\:bg-stone-200\/90:hover {
+  background-color: #443429 !important;
+}
+
+html.dark .hover\:bg-white:hover {
+  background-color: #2c221a !important;
+}
+
+html.dark .hover\:bg-stone-900:hover {
+  background-color: #3b2d23 !important;
+  color: #ffffff !important;
+}
+
+html.dark .hover\:bg-stone-800:hover {
+  background-color: #33271f !important;
+}
+
+html.dark .hover\:bg-amber-100:hover {
+  background-color: rgba(214, 152, 91, 0.25) !important;
+}
+
+html.dark .hover\:bg-amber-200:hover {
+  background-color: rgba(214, 152, 91, 0.32) !important;
+}
+
+html.dark .hover\:bg-rose-50:hover {
+  background-color: rgba(244, 63, 94, 0.2) !important;
+}
+
+html.dark .hover\:text-stone-900:hover {
+  color: #ffffff !important;
+}
+
+html.dark .hover\:text-stone-800:hover {
+  color: #fbf5ed !important;
+}
+
+html.dark .hover\:text-stone-700:hover {
+  color: #ecdccb !important;
+}
+
+/* Ensure text inside hovered table row maintains crisp, legible contrast */
+html.dark tr:hover td {
+  opacity: 1 !important;
+}
+
+html.dark tr:hover td.text-stone-900 {
+  color: #ffffff !important;
+}
+
+html.dark tr:hover td.text-stone-800 {
+  color: #fbf5ed !important;
+}
+
+html.dark tr:hover td.text-stone-700 {
+  color: #ecdccb !important;
+}
+
+html.dark tr:hover td.text-stone-400 {
+  color: #bcaaa8 !important;
+}
+
+/* Color Badges & Formula Metric Wells in Dark Leather */
+html.dark .bg-amber-50 {
+  background-color: rgba(214, 152, 91, 0.16) !important;
+}
+html.dark .border-amber-200 {
+  border-color: rgba(214, 152, 91, 0.35) !important;
+}
+html.dark .text-amber-950,
+html.dark .text-amber-900 {
+  color: #faedd9 !important;
+}
+html.dark .text-amber-800,
+html.dark .text-amber-700 {
+  color: #e5b178 !important;
+}
+
+html.dark .bg-blue-50,
+html.dark .bg-blue-50\/40,
+html.dark .bg-blue-50\/50,
+html.dark .bg-blue-50\/60,
+html.dark .bg-blue-50\/70,
+html.dark .bg-blue-50\/80,
+html.dark .bg-blue-50\/90 {
+  background-color: rgba(59, 130, 246, 0.18) !important;
+}
+html.dark .border-blue-200 {
+  border-color: rgba(59, 130, 246, 0.32) !important;
+}
+html.dark .ring-blue-300 {
+  --tw-ring-color: rgba(96, 165, 250, 0.45) !important;
+}
+html.dark .text-blue-950,
+html.dark .text-blue-900 {
+  color: #dbeafe !important;
+}
+html.dark .text-blue-800,
+html.dark .text-blue-700 {
+  color: #93c5fd !important;
+}
+
+html.dark .bg-sky-50 {
+  background-color: rgba(14, 165, 233, 0.14) !important;
+}
+html.dark .border-sky-200 {
+  border-color: rgba(14, 165, 233, 0.3) !important;
+}
+html.dark .text-sky-950,
+html.dark .text-sky-900 {
+  color: #e0f2fe !important;
+}
+html.dark .text-sky-800,
+html.dark .text-sky-700 {
+  color: #7dd3fc !important;
+}
+
+html.dark .bg-indigo-50 {
+  background-color: rgba(99, 102, 241, 0.14) !important;
+}
+html.dark .border-indigo-200 {
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+html.dark .text-indigo-950,
+html.dark .text-indigo-900 {
+  color: #e0e7ff !important;
+}
+html.dark .text-indigo-800,
+html.dark .text-indigo-700 {
+  color: #a5b4fc !important;
+}
+
+html.dark .bg-rose-50 {
+  background-color: rgba(244, 63, 94, 0.14) !important;
+}
+html.dark .border-rose-200 {
+  border-color: rgba(244, 63, 94, 0.3) !important;
+}
+html.dark .text-rose-950,
+html.dark .text-rose-900 {
+  color: #ffe4e6 !important;
+}
+html.dark .text-rose-800,
+html.dark .text-rose-700 {
+  color: #fda4af !important;
+}
+
+html.dark .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.14) !important;
+}
+html.dark .border-emerald-200 {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+html.dark .text-emerald-950,
+html.dark .text-emerald-900 {
+  color: #d1fae5 !important;
+}
+html.dark .text-emerald-800,
+html.dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+html.dark .bg-purple-50 {
+  background-color: rgba(168, 85, 247, 0.14) !important;
+}
+html.dark .border-purple-200 {
+  border-color: rgba(168, 85, 247, 0.3) !important;
+}
+html.dark .text-purple-950 {
+  color: #f3e8ff !important;
+}
+html.dark .text-purple-800 {
+  color: #d8b4fe !important;
+}
+
+/* Font Anatomy Badge & Letterform Styling in Dark Leather */
+html.dark .bg-emerald-100 {
+  background-color: rgba(16, 185, 129, 0.18) !important;
+  color: #6ee7b7 !important;
+}
+html.dark .bg-rose-100 {
+  background-color: rgba(244, 63, 94, 0.18) !important;
+  color: #fda4af !important;
+}
+html.dark .bg-indigo-100 {
+  background-color: rgba(99, 102, 241, 0.18) !important;
+  color: #a5b4fc !important;
+}
+html.dark .bg-amber-100 {
+  background-color: rgba(214, 152, 91, 0.22) !important;
+  color: #f3c28b !important;
+}
+html.dark .bg-purple-100 {
+  background-color: rgba(168, 85, 247, 0.18) !important;
+  color: #d8b4fe !important;
+}
+
+/* Code & Pre Formatting in Dark Leather */
+html.dark pre,
+html.dark code {
+  background-color: #1a130f !important;
+  color: #e5b178 !important;
+}
+
+/* Authentic Paper Presentation on Dark Workspace */
+html.dark #live-artboard-canvas {
+  background-color: #fffefb !important;
+  color: #1c1510 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Custom Scrollbar in Dark Leather */
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #15110d;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #3d2f25;
+  border-radius: 4px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #503f32;
+}
+
+/* Custom Scrollbar in Light Pastel Beige */
+html:not(.dark) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f7f4ee;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #ded5c2;
+  border-radius: 4px;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #cec2ab;
+}
